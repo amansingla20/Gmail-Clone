@@ -1,9 +1,10 @@
 import './App.css';
 import Header from './Header';
 import Sidebar from './Sidebar';
-import {BrowserRouter as Router, Switch, Route, Link} from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 import EmailList from './EmailList';
 import Mail from './Mail';
+import SendMail from './SendMail';
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
           </Route>
         </Switch>
         </div>
-        </div>
+        <SendMail />
+       </div>
     </Router>
   );
 }
