@@ -7,6 +7,7 @@ import Mail from './Mail';
 import SendMail from './SendMail';
 
 function App() {
+ // const sendMailOpen = false;
   return (
     <Router>
     <div className="App">
@@ -22,6 +23,8 @@ function App() {
           </Route>
         </Switch>
         </div>
+        { //sendMailOpen && 
+        }
         <SendMail />
        </div>
     </Router>

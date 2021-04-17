@@ -1,11 +1,11 @@
 .sendMail {
   position: absolute;
   bottom: 0px;
-  right: 50px;
+  right: 40px;
   background-color: #404040;
   width: 40%;
-  height: 40%;
-  max-width: 500px;
+  height: 55%;
+  max-width: 600px;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   display: flex;
@@ -29,7 +29,6 @@
 
 .sendMailSend {
   background-color: #3079ed !important;
-  text-transform: capitalize !important;
   margin: 15px !important;
 }
 
@@ -53,4 +52,10 @@
 
 .sendMailMessage {
   flex: 1;
+}
+
+.sendMailError {
+  background-color: white;
+  color: red;
+  text-align: right;
 }

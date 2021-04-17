@@ -13,12 +13,17 @@ import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import PersonIcon from '@material-ui/icons/Person';
 import DuoIcon from '@material-ui/icons/Duo';
 import PhoneIcon from '@material-ui/icons/Phone';
+import SendMail from './SendMail';
 
 function Sidebar() {
     return (
         <div className='sidebar'>
             <Button className='sidebar-compose'
-            startIcon={<AddIcon fontSize='large' />}>Compose</Button>
+            onClick={()=> <SendMail/>}
+            startIcon={<AddIcon fontSize='large' />}>
+              Compose
+            </Button>
+            
             <SidebarOption Icon={InboxIcon} title='Inbox'
             number={20}
             selected={true}
