@@ -3,18 +3,21 @@ import React from 'react'
 import CloseIcon from '@material-ui/icons/Close';
 import { Button} from '@material-ui/core';
 import { useForm } from 'react-hook-form';
+import { IconButton } from '@material-ui/core';
 
 function SendMail() {
-    const {register , handleSubmit , watch, errors } = useForm();
-    const to = watch('to');
+    const {register , handleSubmit , errors, reset } = useForm();
     const onSubmit =(formData) =>{
         console.log(formData);
+        reset();
     }
     return (
         <div className='sendMail'>
             <div className="sendMailHeader">
-                <h3> New Message {to}</h3>
+                <h3> New Message </h3>
+                <IconButton>
                 <CloseIcon className='sendMailCloser'/>
+                </IconButton>
             </div>
             <form onSubmit={handleSubmit(onSubmit)}>
                 <input 

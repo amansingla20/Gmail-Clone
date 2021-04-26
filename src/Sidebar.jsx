@@ -15,11 +15,11 @@ import DuoIcon from '@material-ui/icons/Duo';
 import PhoneIcon from '@material-ui/icons/Phone';
 
 
-function Sidebar() {
+function Sidebar({sendMail , setSendMail }) {
     return (
         <div className='sidebar'>
             <Button className='sidebar-compose'
-            startIcon={<AddIcon fontSize='large' />}>
+            startIcon={<AddIcon fontSize='large' />} onClick={()=> setSendMail(!sendMail)}>
               Compose
             </Button>
             
